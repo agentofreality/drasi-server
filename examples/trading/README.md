@@ -251,8 +251,8 @@ const queryConfig = {
     RETURN s.symbol, sp.price
   `,
   sources: [
-    { sourceId: 'postgres-stocks', pipeline: [] },
-    { sourceId: 'price-feed', pipeline: [] }
+    { source_id: 'postgres-stocks', pipeline: [] },
+    { source_id: 'price-feed', pipeline: [] }
   ],
   joins: [{
     id: 'HAS_PRICE',

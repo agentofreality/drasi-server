@@ -61,8 +61,8 @@ this.queries.set('tech-stocks-query', {
            ((sp.price - sp.previous_close) / sp.previous_close * 100) AS change_percent
   `,
   sources: [
-    { sourceId: 'postgres-stocks', pipeline: [] },
-    { sourceId: 'price-feed', pipeline: [] }
+    { source_id: 'postgres-stocks', pipeline: [] },
+    { source_id: 'price-feed', pipeline: [] }
   ],
   joins: [hasPrice]
 });
